@@ -90,8 +90,8 @@ class Slurm(object):
         self.bash_strict = bash_strict
 
         header = []
-        if 'time' not in slurm_kwargs.keys():
-            slurm_kwargs['time'] = '84:00:00'
+#        if 'time' not in slurm_kwargs.keys():
+#            slurm_kwargs['time'] = '84:00:00'
         for k, v in slurm_kwargs.items():
             if len(k) > 1:
                 k = "--" + k + "="
